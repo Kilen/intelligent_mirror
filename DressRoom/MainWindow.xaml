@@ -1,0 +1,12 @@
+﻿<Window x:Class="DressRoom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="750" Width="1000" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Canvas Name="MainCanvas">
+        <Ellipse Canvas.Left="238" Canvas.Top="12" Fill="Blue" Height="50" Name="leftEllipse" Opacity="1" Stroke="White" Width="50" Panel.ZIndex="10" />
+        <Ellipse Canvas.Left="294" Canvas.Top="12" Fill="Blue" Height="50" Name="rightEllipse" Opacity="1"  Stroke="White" Width="50" Panel.ZIndex="10" />
+        <Image Canvas.Left="0" Canvas.Top="0" Height="720" Name="camera" Stretch="Fill" Width="960" />
+        <Button Canvas.Left="726" Canvas.Top="106" Content="上身" Height="45" Name="shirts_button" Width="75" Click="shirts_button_Click" />
+        <Button Canvas.Left="726" Canvas.Top="179" Content="下身" Height="45" Name="trousers_button" Width="75" Click="trousers_button_Click" />
+    </Canvas>
+</Window>
